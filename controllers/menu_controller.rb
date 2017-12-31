@@ -14,7 +14,7 @@ class MenuController
       puts "2 - Create an entry"
       puts "3 - Search for an entry"
       puts "4 - Import entries from a CSV"
-      pust "5 - View Entry n"
+      puts "5 - View Entry n"
       puts "6 - Exit"
       print "Enter your selection: "
 
