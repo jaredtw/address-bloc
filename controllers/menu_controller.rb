@@ -48,12 +48,9 @@ class MenuController
       exit(0)
     when 7
       system "clear"
-      puts "Are you sure you want to delete all entries? Y/N: "
-      surely = gets.chomp
-      if surely == y || Y
-        nuke
-      else
-        main_menu
+      @address_book.nuke
+      puts "All entries deleted"
+      main_menu
     # #9
     else
       system "clear"
@@ -225,10 +222,6 @@ class MenuController
        # #6
        puts "Updated entry:"
        puts entry
-    end
-
-    def nuke
-      address_book.entries.clear
     end
 
 end
